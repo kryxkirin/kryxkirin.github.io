@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetag Ads Earning</title>
+    
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src='//niphaumeenses.net/vignette.min.js' data-zone='8602514' data-sdk='show_8602514'></script>
+
+    <style>
+        /* Global Styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #000000; /* Pure black */
+            color: #ffffff; /* White text */
+            font-family: 'Ubuntu', sans-serif; /* Modern sans-serif */
+        }
+
+        /* Container Styling */
+        .container {
+            text-align: center;
+            background-color: #000000; /* Black background for uniformity */
+            border: 2px solid #ff0000; /* Red border */
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.8); /* Red glow */
+            max-width: 480px;
+            width: 90%;
+        }
+
+        /* Title Styling */
+        h2 {
+            font-size: 2rem; /* Medium size for title */
+            margin-bottom: 20px;
+            color: #ff6b6b; /* Slightly lighter red */
+            font-family: 'Handjet', sans-serif; /* Decorative font */
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Ownership Line Styling */
+        h3 {
+            font-size: 0.9rem;
+            color: #888888; /* Gray for subtlety */
+            margin-bottom: 40px;
+            font-family: 'Ubuntu', sans-serif; /* Clean sans-serif font */
+        }
+
+        /* Button Styling */
+        .btn {
+            font-size: 1rem;
+            padding: 15px 40px;
+            margin: 10px;
+            border-radius: 12px;
+            border: none;
+            background: linear-gradient(135deg, #d60000, #e64444); /* Slightly darkened gradient */
+            color: #ffffff; /* White text */
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Button glow */
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #e64444, #d60000); /* Reverse gradient on hover */
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        .btn:active {
+            animation: glow 0.5s infinite alternate;
+        }
+
+        /* Glow Animation */
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 25px #e64444;
+            }
+            to {
+                box-shadow: 0 0 35px #d60000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container animate__animated animate__fadeIn">
+    <h2>Monetag Ads Earning</h2>
+    <h3>Powered by @infernoxe</h3>
+    <div>
+        <button id="showAdButton1" class="btn">Show Ad 1</button>
+        <button id="showAdButton2" class="btn">Show Ad 2</button>
+        <button id="showAdButton3" class="btn">Show Ad 3</button>
+        <button id="showAdButton4" class="btn">Show Ad 4</button>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+    function showAd(buttonId) {
+        const button = document.getElementById(buttonId);
+        button.classList.add('active'); // Add glowing effect
+        show_8602514().then(() => {
+            toastr.success(`You have watched the ad on ${buttonId} and earned a reward!`, 'Congratulations');
+        }).catch((error) => {
+            toastr.error('There was an error displaying the ad.', 'Error');
+            console.error(error);
+        }).finally(() => {
+            button.classList.remove('active'); // Remove glowing effect
+        });
+    }
+
+    document.getElementById('showAdButton1').addEventListener('click', function() {
+        showAd('showAdButton1');
+    });
+
+    document.getElementById('showAdButton2').addEventListener('click', function() {
+        showAd('showAdButton2');
+    });
+
+    document.getElementById('showAdButton3').addEventListener('click', function() {
+        showAd('showAdButton3');
+    });
+
+    document.getElementById('showAdButton4').addEventListener('click', function() {
+        showAd('showAdButton4');
+    });
+</script>
+
+</body>
+</html>
